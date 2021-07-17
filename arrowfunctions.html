@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+
+        <!-- Se puede hacer una función de la siguiente manera: -->
+
+        <script> 
+
+        let numero = 23;
+        const funcion = (numero) => {
+            console.log(`Esta es una arrow function con parametros, int: ${numero}`);
+        }
+
+        funcion(numero);
+        </script>
+
+        <!-- si solamente es de una sola linea tu función puedes omitir los corchetes -->
+        <script>
+        const funcion2 =() => console.log("Esta es la segunda función");
+        funcion2();
+
+        // tambien en el caso de que solamente desees hacer uno de una sola linea
+        // con paso de un solo parametro se tendría que hacer de la siguiente manera:
+
+        const funcionDeUnaLinea = numero => console.log(numero);
+
+        funcionDeUnaLinea(numero);
+
+
+
+        // ejemplo de una funcion normal:
+
+        function funcionNormal(numero){
+            console.log(numero);
+        }
+
+        funcionNormal(numero);
+        </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
