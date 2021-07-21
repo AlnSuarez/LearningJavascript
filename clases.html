@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clases</title>
+</head>
+<body>
+
+
+    <script>
+        // aqui inicia como crear una clase de una manera formal
+        class persona{
+
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+
+            dimeTuEdad(){
+                console.log("mi edad es:"+ this.edad);
+            }
+
+        }
+
+        // como instanciar una clase persona
+
+        const Alan = new persona("Alan", 22);
+
+        // como invocar el metodo de un objeto que acaba de ser instanciado
+        Alan.dimeTuEdad();
+
+    </script>
+
+
+    
+    
+</body>
+</html>
