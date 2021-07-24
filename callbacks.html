@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+
+    <!-- un ejemplo de una llamada de una funcion a otra funcion es la siguiente: -->
+    <Script>
+        function sumarNum(uno, dos){
+            imprimirNumero(uno+dos);
+        }
+
+
+        function imprimirNumero(total){
+            console.log("el numero total de sumarNum1 es de "+total);
+        }
+
+        sumarNum(3,4);
+        // en este caso solamente lo que hicimos fue llamar a una función desde sumarNum
+
+
+        // pero hay también otra alternativa, la cual es mandar un metodo como parametro:
+
+        function sumarNum2(uno, dos, miCallback){
+            miCallback(uno+dos);
+        }
+        // este tipo de callbacks se brilla más cuando es usado en código asincrono
+        sumarNum2(3,4,imprimirNumero);
+
+    </Script>
+    
+</body>
+</html>
