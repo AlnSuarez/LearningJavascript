@@ -12,3 +12,14 @@ let b =20;
 
 // en ese mismo ejemplo no se va a sobreescribir.
 
+
+// Declare a Read-Only Variable with the const Keyword
+
+// The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword.
+
+const FAV_PET = "Cats";
+FAV_PET = "Dogs";
+
+//this will display an error
+
+// constants are declared with ALL CAPS
